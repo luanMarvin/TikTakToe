@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(171, 208, 211);
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------- */
+#title{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#title h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4rem;
+}
+
+#gameArea{
+    display: flex;
+    justify-content: center;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonPlayer{
+    border-radius: 4px;
+    background-color: rgb(66, 122, 173);
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 135px;
+    height: 35px;
+    border: none;
+}
+
+#buttonCPU{
+    border-radius: 4px;
+    background-color: rgb(66, 122, 173);
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 135px;
+    height: 35px;
+    border: none;
+}
+
+#buttonPlayer:disabled{
+    border: 2px #fff solid ;
+    background-color: rgb(57, 111, 161);
+}
+
+#buttonCPU:disabled{
+    border: 2px #fff solid ;
+    background-color: rgb(57, 111, 161);
+}
+
+#misc{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nextTurnText{    
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#turnNow{
+    margin-top: 10px;
+    max-width: 100px;
+    border-radius: 15px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="src/tic-tac-toe.svg" >
+</head>
+<body>
+    <div id="title">
+        <h1>TIK TAK TOE</h1>
+    </div>
+
+    <br>
+    <div  id="gameArea">
+        <div>
+            <img onclick="change('A1', 0);" id="imgA1" src="src/empty.png">
+            <img onclick="change('A2', 1);" id="imgA2" src="src/empty.png">
+            <img onclick="change('A3', 2);" id="imgA3" src="src/empty.png"><br>
+            <img onclick="change('B1', 3);" id="imgB1" src="src/empty.png">
+            <img onclick="change('B2', 4);" id="imgB2" src="src/empty.png">
+            <img onclick="change('B3', 5);" id="imgB3" src="src/empty.png"><br>
+            <img onclick="change('C1', 6);" id="imgC1" src="src/empty.png">
+            <img onclick="change('C2', 7);" id="imgC2" src="src/empty.png">
+            <img onclick="change('C3', 8);" id="imgC3" src="src/empty.png">
+        </div>
+    </div>
+
+    <div id="botoes">
+        <br><br>
+        <button id="buttonPlayer" onclick="vsPlayerClicked();" disabled="disabled">VS Player</button>
+        <button id="buttonCPU" onclick="vsCPUClicked();">VS CPU</button>
+    </div>
+
+    <div id="misc">
+            <h2 id="nextTurnText">NEXT TURN</h2>
+            <img id="turnNow" src="src/x.png">
+            <script src="main.js"></script>
+    </div>
+</body>
+</html>
