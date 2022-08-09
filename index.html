@@ -31,13 +31,14 @@
     <div id="botoes">
         <br><br>
         <button id="buttonPlayer" onclick="vsPlayerClicked();" disabled="disabled">VS Player</button>
-        <button id="buttonCPU" onclick="vsCPUClicked();">VS CPU</button>
+        <button id="buttonCPU" disabled onclick="vsCPUClicked();">VS CPU</button>
     </div>
 
     <div id="misc">
             <h2 id="nextTurnText">NEXT TURN</h2>
             <img id="turnNow" src="src/x.png">
             <script src="main.js"></script>
+            <button class="button-reset" onClick="window.location.reload();">Reset</button>
     </div>
 </body>
 </html>

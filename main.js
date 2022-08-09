@@ -64,7 +64,7 @@ var victoryChecker = () => {
     if( (tableID[0] + tableID[1] + tableID[2]) == 3 || (tableID[3] + tableID[4] + tableID[5]) == 3 ||
         (tableID[6] + tableID[7] + tableID[8]) == 3 || (tableID[0] + tableID[3] + tableID[6]) == 3 ||
         (tableID[1] + tableID[4] + tableID[7]) == 3 || (tableID[2] + tableID[5] + tableID[8]) == 3 ||
-        (tableID[0] + tableID[4] + tableID[9]) == 3 || (tableID[2] + tableID[4] + tableID[6]) == 3){
+        (tableID[0] + tableID[4] + tableID[8]) == 3 || (tableID[2] + tableID[4] + tableID[6]) == 3){
         document.getElementById('nextTurnText').innerHTML = "WINNER";
         winner = 1
         actualTurn.src = xSimbol;
@@ -72,7 +72,7 @@ var victoryChecker = () => {
     if( (tableID[0] + tableID[1] + tableID[2]) == -3 || (tableID[3] + tableID[4] + tableID[5]) == -3 ||
     (tableID[6] + tableID[7] + tableID[8]) == -3 || (tableID[0] + tableID[3] + tableID[6]) == -3 ||
     (tableID[1] + tableID[4] + tableID[7]) == -3 || (tableID[2] + tableID[5] + tableID[8]) == -3 ||
-    (tableID[0] + tableID[4] + tableID[9]) == -3 || (tableID[2] + tableID[4] + tableID[6]) == -3) {
+    (tableID[0] + tableID[4] + tableID[8]) == -3 || (tableID[2] + tableID[4] + tableID[6]) == -3) {
         document.getElementById('nextTurnText').innerHTML = "WINNER";
         winner = -1
         actualTurn.src = oSimbol;
